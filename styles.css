@@ -19,7 +19,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   background:
     linear-gradient(rgba(12, 14, 19, 0.3), rgba(12, 14, 19, 0.4)),
-    url("./assets/bg-cs2.png") center / cover no-repeat;
+    url("./assets/bg-cs2.png") center / cover fixed no-repeat;
   color: var(--text);
   line-height: 1.45;
   min-height: 100vh;
@@ -31,11 +31,12 @@ body {
 }
 
 .post-card {
-  background: linear-gradient(180deg, #1d1f24, #181a1f);
-  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(29, 31, 36, 0.82), rgba(24, 26, 31, 0.78));
+  border: 1px solid rgba(90, 96, 112, 0.45);
   border-radius: 16px;
   padding: clamp(1rem, 2vw, 1.5rem);
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1.5px);
 }
 
 .post-head {
@@ -114,8 +115,8 @@ h1 {
 }
 
 .promo-item {
-  background: linear-gradient(180deg, #24262d, #202228);
-  border: 1px solid #333740;
+  background: linear-gradient(180deg, rgba(36, 38, 45, 0.82), rgba(32, 34, 40, 0.78));
+  border: 1px solid rgba(74, 80, 93, 0.65);
   border-radius: 12px;
   min-height: 56px;
   padding: 0.6rem 0.7rem 0.6rem 0.95rem;
