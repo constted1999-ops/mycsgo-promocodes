@@ -17,9 +17,13 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+<<<<<<< HEAD
   background:
     linear-gradient(rgba(12, 14, 19, 0.3), rgba(12, 14, 19, 0.4)),
     url("./assets/bg-cs2.png") center / cover no-repeat;
+=======
+  background: #131417;
+>>>>>>> 6b6f42350a1a7c3ec0d767055fe5ec2cbe282378
   color: var(--text);
   line-height: 1.45;
   min-height: 100vh;
@@ -41,7 +45,11 @@ body {
 .post-head {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   justify-content: space-between;
+=======
+  justify-content: flex-end;
+>>>>>>> 6b6f42350a1a7c3ec0d767055fe5ec2cbe282378
   gap: 1rem;
   margin-bottom: 1rem;
 }
