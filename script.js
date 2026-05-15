@@ -29,6 +29,7 @@ const translations = {
 
 const langToggle = document.getElementById("langToggle");
 const i18nNodes = document.querySelectorAll("[data-i18n]");
+const REFILL_URL = "https://mycs2.in/refill";
 const copyButtons = document.querySelectorAll(".copy-btn");
 const toast = document.getElementById("toast");
 const updatedDateNode = document.querySelector("[data-i18n='updatedDate']");
@@ -316,6 +317,7 @@ async function copyCode(code, button) {
     button.textContent = translations[currentLang].copiedButton;
     button.classList.add("copied");
     toast.textContent = `${translations[currentLang].toastCopied} ${code}`;
+    window.open(REFILL_URL, "_blank", "noopener,noreferrer");
     setTimeout(() => {
       button.textContent = translations[currentLang].copyButton;
       button.classList.remove("copied");
