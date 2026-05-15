@@ -317,7 +317,6 @@ async function copyCode(code, button) {
     button.textContent = translations[currentLang].copiedButton;
     button.classList.add("copied");
     toast.textContent = `${translations[currentLang].toastCopied} ${code}`;
-    window.open(REFILL_URL, "_blank", "noopener,noreferrer");
     setTimeout(() => {
       button.textContent = translations[currentLang].copyButton;
       button.classList.remove("copied");
@@ -330,6 +329,7 @@ async function copyCode(code, button) {
 copyButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const code = button.dataset.code;
+    window.open(REFILL_URL, "_blank", "noopener,noreferrer");
     copyCode(code, button);
   });
 });
